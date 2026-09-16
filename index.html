@@ -3,6 +3,7 @@
 
 <head>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="aitu-logo.png">
 	<style>
 		li	{color: dimgray;}
 		p {
@@ -14,7 +15,27 @@
 			font-family: Garamond;
 		}
 		.highlight {
+			float:right;
 			background-color: lightgray;
+		}
+		.header {
+			position: relative
+			width: 1300px;
+			border: 15px solid silver;
+			padding: 3px;
+			margin: 10px;
+			font-size: 20px;
+		}
+		.content {
+			font-size: 1.2em;
+		}
+		.footer {
+			position: absolute;
+			top: 500px;
+			right: 20px;
+			width: 180px;
+			height: 190px;
+			border: 3px solid red;
 		}
 	</style>
 	<title>My First Webpage</title>
@@ -22,8 +43,10 @@
 
 <body>
 	<h3 style="background-color:darkgray;">Mukhammedali Bolegen, SE-2538</h3>
-	<h1 id="main-heading">About Me</h1>
-	<p style="color:blue;">I am a student, studying at the Astana IT University in the hopes to one day become a successful software engineer.</p>
+	<div class="header">
+		<h1 id="main-heading">About Me</h1>
+		<p style="color:blue;">I am a student, studying at the Astana IT University in the hopes to one day become a successful software engineer.</p>
+	</div>
 	<div class="highlight">
 		<h3>My hobbies</h3>
 		<ol>
@@ -38,47 +61,51 @@
 			<li>youtube.com</li>
 		</ul>
 	</div>
-	<img src="aitu-logo.png" width="165" height="200">
-	<a href="https://youtube.com">Visit Youtube!</a>
-	<a href="https://github.com/B00Legen">Visit my Github!</a>
-	<button type="button">Here!</button>
-	<table>
-		<tr>
-			<th>Subject</th>
-			<th>Day</th>
-			<th>Time</th>
-		</tr>
-		<tr>
-			<td>SDP</td>
-			<td>Monday</td>
-			<td>2-4PM</td>
-		</tr>
-		<tr>
-			<td>CS Analytics</td>
-			<td>Tuesday</td>
-			<td>2-4PM</td>
-		</tr>
-		<tr>
-			<td>Web Technologies</td>
-			<td>Wednesday</td>
-			<td>2-4PM</td>
-		</tr>
-		<tr>
-			<td>Operating Systems</td>
-			<td>Wednesday</td>
-			<td>6-8PM</td>
-		</tr>
-	</table>
-	<p>Today I felt bored since most of my time was spent in front of &#128187. &#127925 lifts my mood, so I started wearing &#127911 more often lately.</p>
-	<form>
-		<label for="name">Name</label>
-		<input type="text" id="name" name="name"><br><br>
-		<label for="email">Email</label>
-		<input type="email" id="email" name="email"><br><br>
-		<label for="color">Favorite Color</label>
-		<input type="color" id="color" name="color"><br><br>
-		<input type="submit" value="Submit">
-	</form>
+	<div class="content">
+		<img src="aitu-logo.png" width="15%" height="15%">
+		<a href="https://youtube.com">Visit Youtube!</a>
+		<a href="https://github.com/B00Legen">Visit my Github!</a>
+		<button type="button">Here!</button>
+		<table>
+			<tr>
+				<th>Subject</th>
+				<th>Day</th>
+				<th>Time</th>
+			</tr>
+			<tr>
+				<td>SDP</td>
+				<td>Monday</td>
+				<td>2-4PM</td>
+			</tr>
+			<tr>
+				<td>CS Analytics</td>
+				<td>Tuesday</td>
+				<td>2-4PM</td>
+			</tr>
+			<tr>
+				<td>Web Technologies</td>
+				<td>Wednesday</td>
+				<td>2-4PM</td>
+			</tr>
+			<tr>
+				<td>Operating Systems</td>
+				<td>Wednesday</td>
+				<td>6-8PM</td>
+			</tr>
+		</table>
+		<p>Today I felt bored since most of my time was spent in front of &#128187. &#127925 lifts my mood, so I started wearing &#127911 more often lately.</p>
+	</div>
+	<div class="footer">
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="color">Favorite Color</label>
+			<input type="color" id="color" name="color"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
 </body>
 
 </html>
